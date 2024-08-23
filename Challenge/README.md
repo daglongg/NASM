@@ -75,6 +75,7 @@ ld -m elf_i386 helloworld.o -o helloworld
   ## Variables (Biến)
 
   
+![image](https://github.com/user-attachments/assets/05ed85f1-f151-4eeb-9d93-ad22924c5e08)
 
 
 
