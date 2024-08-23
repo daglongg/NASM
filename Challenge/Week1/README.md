@@ -17,3 +17,12 @@ Yêu cầu:
 - Hệ điều hành: Windows & Linux
 
 - Chiều dài đoạn văn bản: 32 ký tự
+  
+# Challenge 3
+
+Viết chương trình nhập vào chuỗi văn bản, in ra chuỗi văn bản được in hoa 
+
+Yêu cầu:
+
+- Hệ điều hành: Windows & Linux
+- Chiều dài đoạn văn bản: 32 ký tự
