@@ -6,7 +6,7 @@
 nasm -f elf helloworld.asm
 ```
 ```
-  ld -m elf_i386 helloworld.o -o helloworld
+ld -m elf_i386 helloworld.o -o helloworld
 ```
 ## Structure of simple assembly program ( Cấu trúc của 1 chương trình ASM )
 
@@ -26,7 +26,7 @@ nasm -f elf helloworld.asm
           _start:
 
           code
-## Registers (Thanh ghi) 32 bit
+## Registers ( Thanh ghi ) 32 bit
 
 `32 bit: EAX, EBX, ECX, EDX`
 
@@ -49,6 +49,33 @@ nasm -f elf helloworld.asm
 - Stack Pointer (SP): Cung cấp giá trị offset trong ngăn xếp chương trình
 
 - Base Pointer (BP): Tham chiếu các biến tham số được truyển cho chương trình con
+
+## System call ( Gọi hệ thống, là các hàm cơ bản để tương tác với hệ điều hành ) 
+
+`https://rbmj.github.io/iwg/exploit/x86_table.html`
+
+- Các bước để gọi hệ thống LINUX trong chương trình của mình: 
+
+  + Thiết lập giá trị cho EAX
+      
+  + Thiết lập các đối số cho EBX, ECX, EDX
+
+    * EDX: Độ dài của mes
+   
+    * ECX: Mess
+   
+    * EBX:
+
+  + INT 80h
+ 
+  + Kết quả sẽ ở trong ghi EAX
+ 
+  ![image](https://github.com/user-attachments/assets/2136ce22-17b1-4a29-99c2-0e24e8325b34)
+
+  ## Variables (Biến)
+
+  
+
 
 
 
