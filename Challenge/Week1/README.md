@@ -27,4 +27,15 @@ Viết chương trình nhập vào chuỗi văn bản, in ra chuỗi văn bản 
 Yêu cầu:
 
 - Hệ điều hành: Windows & Linux
+
 - Chiều dài đoạn văn bản: 32 ký tự
+
+# Challenge 4
+
+Viết chương trình tính tổng 2 số nguyên dương nhập vào từ bàn phím 
+
+Yêu cầu:
+
+- Hệ điều hành: Windows & Linux
+
+- Độ lớn tối đa số nhập vào: 31-bit (2^31-1)
