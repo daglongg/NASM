@@ -17,6 +17,8 @@ Yêu cầu:
 - Hệ điều hành: Windows & Linux
 
 - Chiều dài đoạn văn bản: 32 ký tự
+
+Viết chương trình nhapah vào đoạn văn bản và in ra độ dài của đoạn văn bản đó
   
 # Challenge 3
 
