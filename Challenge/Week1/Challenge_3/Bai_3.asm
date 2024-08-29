@@ -46,12 +46,13 @@ section .text
             mov eax, 1
             int 80h
         
-        ;Logic chinh o day la ta dung
+        ;Logic chính ở đây là ta sẽ so sanh kí tự đó trong khoảng từ A => Z. Nếu k nằm trong khoảng đó thì ta sẽ trừ đi 32
+
 
         inHoa:
             lea esi, text+0
             lap1:
-                mov al, [esi]
+                mov al, [esi] ; esi là địa chỉ ô nhớ của text, và nó sẽ gián giá trị đầu tiên cho ô nhớ al
                 cmp al, 'a'
                 jl In
                 cmp al, 'z'
@@ -61,7 +62,7 @@ section .text
                 mov [esi], al
                 mov eax, 4
                 mov ebx, 1
-                lea ecx, [esi]
+                lea ecx, [esi] ; đoạn này dùng lea thay vì mov và bả chất ecx cần địa chỉ để in.
                 mov edx, 1
                 int 80h
                 inc esi
@@ -69,7 +70,6 @@ section .text
                 jne lap1
 
             ret
-
 
 
 
